@@ -1,0 +1,242 @@
+*{
+  display: border-box;
+}
+body {
+  background-color: #171717;
+  color: #dcef59;
+  font-family: 'Oswald', sans-serif;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+
+/* ============================== 
+            SITE LOGO 
+=================================*/
+/* styling over nav bar  */
+#site-logo {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  float: left;
+  z-index: 10;
+  background-color: #282828;
+  -moz-box-shadow: .5px 1px 10px 5px black;
+  -webkit-box-shadow: .5px 1px 10px 5px black;
+}
+#logo-image {
+  width: 100%;
+}
+
+
+
+/* ============================== 
+            NAVBAR
+================================= */
+/* link styling and behaviors */
+.navbar{
+  width: 100%;
+  height: 2.4em; 
+  background-color: #282828;
+  -moz-box-shadow: .5px 1px 10px 5px black;
+  -webkit-box-shadow: .5px 1px 10px 5px black;
+  z-index: 8;
+  position: relative;
+}
+.nav-buttons, 
+.nav-buttons li {
+  padding-top: .15em;
+  display: inline-block;
+}
+.nav-buttons ul li {
+  list-style-type: none;
+}
+.nav-buttons li:not(:first-child):before {
+  content: " | ";
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+.nav-buttons a{
+  margin: auto 10px;
+  font-size: 1.1rem;
+  padding: 5px 15px;
+  letter-spacing: .15rem;
+}
+.nav-buttons a:visited {
+  color: #dcef59;
+  text-decoration: none;
+}
+.current-page {
+  background-color: #171717;
+  text-shadow: #dcef59 0 0 20px;
+}
+.nav-buttons a:link {
+  color: #dcef59;
+  text-decoration: none;
+}
+.nav-buttons a:hover {
+  background-color: #6b6b6b;
+}
+
+
+
+/* ============================== 
+            USER LOGIN
+================================= */
+/* button styling  */
+#login-button {
+  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right: 3px;
+  width: 40px;
+  height: 40px;
+  background-color: #171717;
+  -moz-box-shadow: -.5px 1px 3px 2px black;
+  -webkit-box-shadow: -.5px 1px 3px 2px black;
+  z-index: 9;
+}
+#loginimg {
+  width: 100%;
+  margin: auto;
+  object-fit: cover;
+}
+
+
+
+/* ============================== 
+            TOP SEARCHES
+================================= */
+/* sidebar on left  */
+#searches-sidebar {
+  width: 150px; 
+  height: 850px;
+  background-color: #3e3e3e;
+  float: left;
+  clear: left;
+}
+#top-searches {
+  width: 150px;
+  height: 100px;
+  background-color: #282828;
+  border-radius: 0 0 50% 50%;
+  position: absolute;
+  top: 110px;
+  z-index: 9;
+  -moz-box-shadow: -.5px 1px 3px 2px black;
+  -webkit-box-shadow: -.5px 1px 3px 2px black;
+}
+#top-searches h3 {
+  font-size: 1.1rem;
+  font-weight: initial;
+  padding-top: 34px;
+  text-align: center;
+}
+.top-search-list {
+  margin: 55px 6% 0;
+ 
+} 
+.top-search-list div{
+  text-align: center;
+  width: 130px;
+  height: 125px;
+  background-color: #282828;
+}
+.top-search-list p {
+  padding-top: 8%;
+}
+.imgcontainer {
+  max-width: 70%;
+  max-height: 60%;
+  display: inline-block;
+}
+
+
+
+/* ============================== 
+            SEARCH BAR
+================================= */
+/* sidebar on right */
+#search-bar-side {
+  float: right;
+  background-color: #3e3e3e;
+  height: 960px;
+  max-width: 275px;
+  position: absolute;
+  right: 0;
+  z-index: 2;
+}
+#search-bar-side ul {
+  color: #e3e3e3;
+
+}
+#search-bar-side li {
+  font-size: .90rem;
+  padding-left: 20%;
+  list-style-position: inside;
+}
+#search-bar-side {
+  color: #e3e3e3;
+}
+#sidebar-answers {
+  padding-top: 10%;
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.35rem;
+}
+#sidebar-signup{
+  text-align: center;
+  font-size: 1.1rem;
+}
+.sidebar-text-container {
+  padding: 30px 20px 20px;
+  margin: 0;
+}
+.searchbar-wrapper{
+  width: 250px;
+  padding-left: 10px;
+  font-family: sans-serif;
+  font-size: .85rem;
+}
+.searchbar {
+  padding-left: 15%;
+}
+form {
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+
+
+
+/* ============================== 
+            MEDIA QUERY
+================================= */
+/* media query behaviors */
+
+@media (max-width: 861px){
+  /* search section on right side */
+  #search-bar-side {
+    max-width: 170px;
+  }
+  #search-bar-side ul li{
+    padding-left: 0;
+  }
+  #search-bar-side li {
+
+  }
+  .searchbar {
+    padding-left: 2%;
+    padding-bottom: 5px;
+  }
+}
+
+@media (min-width: 380px) {
+  #search-bar-side {
+  }
+}
