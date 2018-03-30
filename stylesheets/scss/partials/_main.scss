@@ -1,0 +1,11 @@
+
+*{
+    display: border-box;
+}
+html {
+    font-family: $primary-font-family;
+}
+body {
+    background-color: $primary-background-color;
+    color: $primary-text-color;
+}

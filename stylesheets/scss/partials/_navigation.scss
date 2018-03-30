@@ -1,0 +1,55 @@
+.navbar-container {
+    display: flex;
+    justify-content: space-around;
+    height: 2em;
+    background: linear-gradient($base-light, $base);
+    // @extend %clearfix;
+    z-index: 8;
+}
+
+/* nav buttons and link styling */
+.nav-buttons {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: .2;
+    margin-top: 5px;
+
+    a {
+        font-size: .8rem;
+        padding: 10px;
+        // letter-spacing: .15rem;
+        text-decoration: none;
+        &:link {
+            color: $primary-text-color;
+        }
+        &:visited {
+            color: $primary-text-color;
+        }
+        &:hover {
+            background-color: $base-lighter;
+        }
+    }
+}
+
+.current-page {
+    @include current-page;
+}
+
+.site-logo {
+    @include h-w (2.4em);
+    background: linear-gradient($base-light, $base);
+    z-index: 10;
+}
+
+.login-button {
+    @include h-w (2.4em);
+    background-color: $base;
+    @include dropshadow;
+    z-index: 9;
+}
+
+.img-fit {
+    width: 100%;
+}
+
+

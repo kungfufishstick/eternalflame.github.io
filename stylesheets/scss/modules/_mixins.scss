@@ -1,0 +1,17 @@
+$drop-shadow-values: 0px 0px 10px 2px black;
+
+
+@mixin dropshadow {
+    -moz-box-shadow: $drop-shadow-values;
+    -webkit-box-shadow: $drop-shadow-values;
+}
+
+@mixin h-w($dim) {
+    height: $dim;
+    width: $dim;
+}
+
+@mixin current-page {
+    background-color: $primary-background-color;
+    text-shadow: $primary-text-color 0 0 10px;
+}
