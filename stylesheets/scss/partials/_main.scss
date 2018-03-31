@@ -39,6 +39,9 @@ hr {
 .top-searches {
     display: flex;
     justify-content: center;
+    p {
+        font-size: 1.2em;
+    }
 }
 
 .top-search-list {
