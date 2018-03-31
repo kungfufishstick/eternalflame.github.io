@@ -48,7 +48,12 @@ hr {
 }
 
 .popsearch {
-
+    text-align: center;
     // justify-content: center;
     padding: 10px;
+}
+
+.imgcontainer img{
+    margin-left: 10px; 
+    @include h-w(100px);
 }

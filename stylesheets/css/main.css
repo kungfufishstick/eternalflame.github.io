@@ -86,6 +86,12 @@ hr {
   justify-content: center; }
 
 .popsearch {
+  text-align: center;
   padding: 10px; }
+
+.imgcontainer img {
+  margin-left: 10px;
+  height: 100px;
+  width: 100px; }
 
 /*# sourceMappingURL=main.css.map */
