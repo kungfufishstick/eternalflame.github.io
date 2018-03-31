@@ -29,7 +29,6 @@
 .site-logo {
   height: 2.4em;
   width: 2.4em;
-  background: linear-gradient(#575757, #171717);
   order: -1;
   z-index: 10; }
 
@@ -51,5 +50,42 @@ html {
 body {
   background-color: #171717;
   color: #dcef59; }
+
+hr {
+  margin-top: 5px;
+  border: none;
+  height: 2px;
+  background-color: #3d3d3d;
+  width: 85%; }
+
+/* Search Bar Styling */
+.searchbar {
+  display: flex;
+  margin-top: 5px;
+  justify-content: flex-end;
+  margin-right: 2px; }
+
+.flexy-nav-search {
+  height: 10px;
+  font-size: .70em; }
+
+/* Top searches content styling */
+.top-searches-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 10px; }
+
+.top-searches {
+  display: flex;
+  justify-content: center; }
+
+.top-search-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.popsearch {
+  padding: 10px; }
 
 /*# sourceMappingURL=main.css.map */

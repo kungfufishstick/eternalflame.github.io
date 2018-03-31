@@ -9,3 +9,46 @@ body {
     background-color: $primary-background-color;
     color: $primary-text-color;
 }
+hr {
+    margin-top: 5px;
+    border: none;
+    height: 2px;
+    background-color: $base-lighter;
+    width: 85%;
+}
+
+/* Search Bar Styling */
+.searchbar {
+    display: flex;
+    margin-top: 5px;
+    justify-content: flex-end;
+    margin-right: 2px;
+}
+.flexy-nav-search {
+    height: 10px;
+    font-size: .70em;
+}
+
+/* Top searches content styling */
+.top-searches-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.top-searches {
+    display: flex;
+    justify-content: center;
+}
+
+.top-search-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.popsearch {
+
+    // justify-content: center;
+    padding: 10px;
+}
