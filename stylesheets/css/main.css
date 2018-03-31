@@ -88,10 +88,13 @@ hr {
 .popsearch {
   text-align: center;
   padding: 10px; }
+  .popsearch p {
+    font-size: .7em; }
 
 .imgcontainer img {
   margin-left: 10px;
-  height: 100px;
-  width: 100px; }
+  margin-right: 10px;
+  height: 90px;
+  width: 90px; }
 
 /*# sourceMappingURL=main.css.map */

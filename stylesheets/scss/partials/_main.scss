@@ -51,9 +51,13 @@ hr {
     text-align: center;
     // justify-content: center;
     padding: 10px;
+    p {
+        font-size: .7em;
+    }
 }
 
 .imgcontainer img{
-    margin-left: 10px; 
-    @include h-w(100px);
+    margin-left: 10px;
+    margin-right: 10px; 
+    @include h-w(90px);
 }
