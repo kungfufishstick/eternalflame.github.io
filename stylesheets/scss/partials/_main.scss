@@ -18,16 +18,28 @@ hr {
 }
 
 /* Search Bar Styling */
-.searchbar {
+.searchbar-container {
     display: flex;
     margin-top: 5px;
     justify-content: flex-end;
-    margin-right: 2px;
+    margin-right: 10px;
 }
+
 .flexy-nav-search {
-    height: 10px;
-    font-size: .70em;
+    border-radius: 5px;
+    padding-right: 5px;
+    width: 30px;
+    height: 15px;
+    font-size: 12px;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
+    float: right;
 }
+.flexy-nav-search:focus {
+    width: 200px;
+}
+
 
 /* Top searches content styling */
 .top-searches-main {
@@ -52,7 +64,6 @@ hr {
 
 .popsearch {
     text-align: center;
-    // justify-content: center;
     padding: 10px;
     p {
         font-size: 14px;
