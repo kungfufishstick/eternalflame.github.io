@@ -68,7 +68,7 @@ hr {
 .flexy-nav-search {
   border-radius: 5px;
   padding-right: 5px;
-  width: 30px;
+  width: 31px;
   height: 15px;
   font-size: 12px;
   -webkit-transition: all .5s ease;
@@ -109,9 +109,6 @@ hr {
   height: 90px;
   width: 90px; }
 
-@media (min-width: 280px) {
-  .popsearch {
-    flex-basis: 100%; } }
 @media (min-width: 390px) {
   .popsearch {
     flex-basis: 30%; } }
