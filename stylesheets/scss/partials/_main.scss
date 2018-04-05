@@ -100,14 +100,14 @@ hr {
         }
     }
 }
-// .imgcontainer .content {
-//     position: absolute; /* Position the background text */
-//     bottom: 0; /* At the bottom. Use top:0 to append it to the top */
-//     background: rgba(0, 0, 0, 0.65); /* Black background with 0.5 opacity */
-//     width: 90px; /* Full width */
-//     line-height: 1px;
-//     // padding: 20px; /* Some padding */
-// }
+.imgcontainer .content {
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgba(0, 0, 0, 0.65); /* Black background with 0.5 opacity */
+    width: 90px; /* Full width */
+    line-height: 1px;
+    // padding: 20px; /* Some padding */
+}
 
 /* Top audio content styling */
 .top-audio-main {
