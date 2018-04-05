@@ -53,7 +53,7 @@ hr {
 
 .imgcontainer {
     position: relative;
-    // display: flex;
+    display: flex;
     justify-content: center;
     img{
         margin-left: 10px;
@@ -62,15 +62,52 @@ hr {
         
     }
 }
-.imgcontainer .content {
-    position: absolute; /* Position the background text */
-    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
-    
-    background: rgba(0, 0, 0, 0.65); /* Black background with 0.5 opacity */
-    width: 90px; /* Full width */
-    line-height: 1px;
-    // padding: 20px; /* Some padding */
+
+#ichingoverlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    // margin: 0 auto;
+    align-items: center;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 2;
+    cursor: pointer;
+    .ichingoverlayimg {
+        display: flex;
+        margin-top: 25px;
+        flex-direction: row;
+        // min-height: 90vh;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        
+    }
+    .ichingoverlaytxt {
+        display: flex;
+        flex-direction: column;
+        // min-height: 90vh;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        align-content: center;
+        justify-content: center;
+        h2 {
+            text-align: center;
+        }
+    }
 }
+// .imgcontainer .content {
+//     position: absolute; /* Position the background text */
+//     bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+//     background: rgba(0, 0, 0, 0.65); /* Black background with 0.5 opacity */
+//     width: 90px; /* Full width */
+//     line-height: 1px;
+//     // padding: 20px; /* Some padding */
+// }
 
 /* Top audio content styling */
 .top-audio-main {

@@ -109,6 +109,7 @@ hr {
 
 .imgcontainer {
   position: relative;
+  display: flex;
   justify-content: center; }
   .imgcontainer img {
     margin-left: 10px;
@@ -116,16 +117,35 @@ hr {
     height: 90px;
     width: 90px; }
 
-.imgcontainer .content {
-  position: absolute;
-  /* Position the background text */
+#ichingoverlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
   bottom: 0;
-  /* At the bottom. Use top:0 to append it to the top */
-  background: rgba(0, 0, 0, 0.65);
-  /* Black background with 0.5 opacity */
-  width: 90px;
-  /* Full width */
-  line-height: 1px; }
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+  cursor: pointer; }
+  #ichingoverlay .ichingoverlayimg {
+    display: flex;
+    margin-top: 25px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center; }
+  #ichingoverlay .ichingoverlaytxt {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    align-content: center;
+    justify-content: center; }
+    #ichingoverlay .ichingoverlaytxt h2 {
+      text-align: center; }
 
 /* Top audio content styling */
 .top-audio-main {
