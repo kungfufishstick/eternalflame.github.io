@@ -1,0 +1,22 @@
+/* Search Bar Styling */
+.searchbar-container {
+    display: flex;
+    margin-top: 5px;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+.flexy-nav-search {
+    border-radius: 5px;
+    padding-right: 5px;
+    width: 31px;
+    height: 15px;
+    font-size: 12px;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
+    float: right;
+}
+.flexy-nav-search:focus {
+    width: 200px;
+}

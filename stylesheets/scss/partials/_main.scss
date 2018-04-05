@@ -2,8 +2,10 @@
 *{
     display: border-box;
 }
-html {
+html body {
     font-family: $primary-font-family;
+    height: 100%;
+    min-height: 100vh;
 }
 body {
     background-color: $primary-background-color;
@@ -11,33 +13,11 @@ body {
 }
 hr {
     margin-top: 5px;
+    margin-bottom: 5px;
     border: none;
     height: 2px;
     background-color: $base-lighter;
     width: 85%;
-}
-
-/* Search Bar Styling */
-.searchbar-container {
-    display: flex;
-    margin-top: 5px;
-    justify-content: flex-end;
-    margin-right: 10px;
-}
-
-.flexy-nav-search {
-    border-radius: 5px;
-    padding-right: 5px;
-    width: 31px;
-    height: 15px;
-    font-size: 12px;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    transition: all .5s ease;
-    float: right;
-}
-.flexy-nav-search:focus {
-    width: 200px;
 }
 
 
@@ -48,18 +28,13 @@ hr {
     justify-content: center;
     padding-bottom: 10px;
 }
-.top-searches {
+.top-header {
     display: flex;
     justify-content: center;
+    margin-top: 10px;
     p {
         font-size: 20px;
     }
-}
-
-.top-search-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 .popsearch {
@@ -70,8 +45,58 @@ hr {
     }
 }
 
-.imgcontainer img{
-    margin-left: 10px;
-    margin-right: 10px; 
-    @include h-w(90px);
+.top-search-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
+.imgcontainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    img{
+        margin-left: 10px;
+        margin-right: 10px; 
+        @include h-w(90px);
+        
+    }
+}
+.imgcontainer .content {
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgba(0, 0, 0, 0.65); /* Black background with 0.5 opacity */
+    width: 90px; /* Full width */
+    line-height: 1px;
+    // padding: 20px; /* Some padding */
+}
+
+/* Top audio content styling */
+.top-audio-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.top-audio-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* Top video content styling */
+.top-video-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.top-video-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+

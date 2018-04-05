@@ -41,23 +41,6 @@
 .img-fit {
   width: 100%; }
 
-* {
-  display: border-box; }
-
-html {
-  font-family: "Oswald", sans-serif; }
-
-body {
-  background-color: #171717;
-  color: #dcef59; }
-
-hr {
-  margin-top: 5px;
-  border: none;
-  height: 2px;
-  background-color: #3d3d3d;
-  width: 85%; }
-
 /* Search Bar Styling */
 .searchbar-container {
   display: flex;
@@ -79,6 +62,26 @@ hr {
 .flexy-nav-search:focus {
   width: 200px; }
 
+* {
+  display: border-box; }
+
+html body {
+  font-family: "Oswald", sans-serif;
+  height: 100%;
+  min-height: 100vh; }
+
+body {
+  background-color: #171717;
+  color: #dcef59; }
+
+hr {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: none;
+  height: 2px;
+  background-color: #3d3d3d;
+  width: 85%; }
+
 /* Top searches content styling */
 .top-searches-main {
   display: flex;
@@ -86,16 +89,12 @@ hr {
   justify-content: center;
   padding-bottom: 10px; }
 
-.top-searches {
+.top-header {
   display: flex;
-  justify-content: center; }
-  .top-searches p {
+  justify-content: center;
+  margin-top: 10px; }
+  .top-header p {
     font-size: 20px; }
-
-.top-search-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; }
 
 .popsearch {
   text-align: center;
@@ -103,11 +102,55 @@ hr {
   .popsearch p {
     font-size: 14px; }
 
-.imgcontainer img {
-  margin-left: 10px;
-  margin-right: 10px;
-  height: 90px;
-  width: 90px; }
+.top-search-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.imgcontainer {
+  position: relative;
+  display: flex;
+  justify-content: center; }
+  .imgcontainer img {
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 90px;
+    width: 90px; }
+
+.imgcontainer .content {
+  position: absolute;
+  /* Position the background text */
+  bottom: 0;
+  /* At the bottom. Use top:0 to append it to the top */
+  background: rgba(0, 0, 0, 0.65);
+  /* Black background with 0.5 opacity */
+  width: 90px;
+  /* Full width */
+  line-height: 1px; }
+
+/* Top audio content styling */
+.top-audio-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 10px; }
+
+.top-audio-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+/* Top video content styling */
+.top-video-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 10px; }
+
+.top-video-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
 
 @media (min-width: 390px) {
   .popsearch {
