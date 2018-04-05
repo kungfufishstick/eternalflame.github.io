@@ -109,7 +109,6 @@ hr {
 
 .imgcontainer {
   position: relative;
-  display: flex;
   justify-content: center; }
   .imgcontainer img {
     margin-left: 10px;
