@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Eternal Flame</title>
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/css/normalize.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/css/main.css" />
-    <script src="js/main.js"></script>
+    
+    <!-- STYLESHEET LINKS -->
+    <link rel="stylesheet" media="screen" href="stylesheets/css/normalize.css" />
+    <link href="stylesheets/css/mediaelementplayer.css" rel="stylesheet">
+    <link rel="stylesheet" media="screen" href="stylesheets/css/main.css" />
+    
+    <!-- SCRIPT LINKS -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/mediaelement-and-player.min.js"></script> -->
+    
 </head>
+
 <body>
+
+    <!-- NAVBAR SECTION -->
     <div class="navbar-container">
         <div class="nav-buttons">
             <div><a href="index.html" class="nava home current-page">Home</a></div>
@@ -27,22 +38,55 @@
         </div> 
     </div>
 
+    <!-- SEARCHBAR -->
     <div class="searchbar-container">
-            <form action="" class="flexy-nav-form">
-                <input class="flexy-nav-search" type="text" placeholder="Search our libary...">
-            </form>
+        <form action="" class="flexy-nav-form">
+            <input class="flexy-nav-search" type="text" placeholder="Search our libary...">
+        </form>
     </div>
 
-    <!-- <div id="overlay" onclick="off()"></div> -->
-    <div id="ichingoverlay" onclick="off()">
-            <div class="ichingoverlayimg">  
-                <img src="img/iching.jpg">
-            </div><div class="ichingoverlaytxt">
-                    <h2>I Ching</h2>
-                    <p>blah blah blah stuff</p>
-            </div>
+    <!-- IMAGE OVERLAYS -->
+    <div id="nostradamusoverlay">
+        <div class="nostradamusoverlayimg">  
+            <img src="img/nostradamus.jpg">
         </div>
+        <div class="nostradamusoverlaytxt">
+            <h2>Nostradamus</h2>
+            <p>blah blah blah stuff</p>
+        </div>
+    </div>
 
+    <div id="vedasoverlay">
+        <div class="vedasoverlayimg">  
+            <img src="img/vedas.jpg">
+        </div>
+        <div class="vedasoverlaytxt">
+            <h2>Vedas</h2>
+            <p>blah blah blah stuff</p>
+        </div>
+    </div>
+
+    <div id="apocryphaoverlay">
+        <div class="apocryphaoverlayimg">  
+            <img src="img/apocrypha.jpg">
+        </div>
+        <div class="apocryphaoverlaytxt">
+            <h2>Apocrypha</h2>
+            <p>blah blah blah stuff</p>
+        </div>
+    </div>
+    
+    <div id="ichingoverlay">
+        <div class="ichingoverlayimg">  
+            <img src="img/iching.jpg">
+        </div>
+        <div class="ichingoverlaytxt">
+            <h2>I Ching</h2>
+            <p>blah blah blah stuff</p>
+        </div>
+    </div>
+
+    <!-- TOP SEARCHES IMAGE SECTION -->
     <div class="top-searches-container">
         <div class="top-searches top-header">
             <p>Top Recent Searches</p>
@@ -51,8 +95,8 @@
             <div class="top-search-list">
                 <div class="poptopsearch top-search1 popsearch">
                 <!-- <p>Nostradamus</p> -->
-                    <div class="imgcontainer">
-                        <a href="#"></a><img src="img/nostradamus.jpg" alt=""></a>
+                    <div class="imgcontainer" id="nostradamus">
+                        <img src="img/nostradamus.jpg" alt="">
                         <div class="content">
                             <p>Nostradamus</p>
                         </div>
@@ -61,7 +105,7 @@
 
                 <div class="poptopsearch top-search2 popsearch">
                     <!-- <p>Vedas</p> -->
-                    <div class="imgcontainer">
+                    <div class="imgcontainer" id="vedas">
                         <img src="img/vedas.jpg" alt="">
                         <div class="content">
                             <p>Vedas</p>
@@ -71,7 +115,7 @@
 
                 <div class="poptopsearch top-search3 popsearch">
                     <!-- <p>Apocrypha</p> -->
-                    <div class="imgcontainer">
+                    <div class="imgcontainer" id="apocrypha">
                         <img src="img/apocrypha.jpg" alt="">
                         <div class="content">
                             <p>Apocrypha</p>
@@ -82,7 +126,7 @@
                 
                 <div class="poptopsearch top-search4 popsearch">
                     <!-- <p>I Ching</p> -->
-                    <div class="imgcontainer" onclick="on()">
+                    <div class="imgcontainer" id="iching">
                         <img src="img/iching.jpg" alt="">
                         <div class="content">
                             <p>I Ching</p>
@@ -94,81 +138,84 @@
     </div>
     <hr>
 
+    <!-- TOP AUDIO SECTION -->
     <div class="top-audio-container">
         <div class="top-audio-header top-header">
             <p>Top Audio</p>
         </div>
         <div class="top-audio-main">
-                <div class="top-audio-list">
-                    <div class="popaudio top-audio1 popsearch">
-                    <p>Nostradamus</p>
-                        <div class="imgcontainer">
-                            <img src="img/nostradamus.jpg" alt="">
-                        </div>
+            <div class="top-audio-list">
+                <div class="popaudio top-audio1 popsearch">
+                <p>Nostradamus</p>
+                    <div class="imgcontainer">
+                        <img src="img/nostradamus.jpg" alt="">
                     </div>
-    
-                    <div class="popaudio top-audio2 popsearch">
-                        <p>Vedas</p>
-                        <div class="imgcontainer">
-                            <img src="img/vedas.jpg" alt="">
-                        </div>
+                </div>
+
+                <div class="popaudio top-audio2 popsearch">
+                    <p>Vedas</p>
+                    <div class="imgcontainer">
+                        <img src="img/vedas.jpg" alt="">
                     </div>
-    
-                    <div class="popaudio top-audio3 popsearch">
-                        <p>Apocrypha</p>
-                        <div class="imgcontainer">
-                            <img src="img/apocrypha.jpg" alt="">
-                        </div>
+                </div>
+
+                <div class="popaudio top-audio3 popsearch">
+                    <p>Apocrypha</p>
+                    <div class="imgcontainer">
+                        <img src="img/apocrypha.jpg" alt="">
                     </div>
-    
-                    <div class="popaudio top-audio4 popsearch">
-                        <p>I Ching</p>
-                        <div class="imgcontainer">
-                            <img src="img/iching.jpg" alt="">
-                        </div>
+                </div>
+
+                <div class="popaudio top-audio4 popsearch">
+                    <p>I Ching</p>
+                    <div class="imgcontainer">
+                        <img src="img/iching.jpg" alt="">
                     </div>
                 </div>
             </div>
+        </div>
     </div>
     <hr>
 
+    <!-- TOP VIDEOS SECTION -->
     <div class="top-videos-container">
         <div class="top-video-header top-header">
             <p>Top Videos</p>
         </div>
 
         <div class="top-video-main">
-                <div class="top-video-list">
-                    <div class="popvideo top-video1 popsearch">
+            <div class="top-video-list">
+                <div class="popvideo top-video1 popsearch">
                     <p>Nostradamus</p>
-                        <div class="imgcontainer">
-                            <img src="img/nostradamus.jpg" alt="">
-                        </div>
+                    <div class="imgcontainer">
+                        <img src="img/nostradamus.jpg" alt="">
                     </div>
+                </div>
     
-                    <div class="popvideo top-video2 popsearch">
-                        <p>Vedas</p>
-                        <div class="imgcontainer">
-                            <img src="img/vedas.jpg" alt="">
-                        </div>
+                <div class="popvideo top-video2 popsearch">
+                    <p>Vedas</p>
+                    <div class="imgcontainer">
+                        <img src="img/vedas.jpg" alt="">
                     </div>
-    
-                    <div class="popvideo top-video3 popsearch">
-                        <p>Apocrypha</p>
-                        <div class="imgcontainer">
-                            <img src="img/apocrypha.jpg" alt="">
-                        </div>
+                </div>
+
+                <div class="popvideo top-video3 popsearch">
+                    <p>Apocrypha</p>
+                    <div class="imgcontainer">
+                        <img src="img/apocrypha.jpg" alt="">
                     </div>
-    
-                    <div class="popvideo top-video4 popsearch">
-                        <p>I Ching</p>
-                        <div class="imgcontainer">
-                            <img src="img/iching.jpg" alt="">
-                        </div>
+                </div>
+
+                <div class="popvideo top-video4 popsearch">
+                    <p>I Ching</p>
+                    <div class="imgcontainer">
+                        <img src="img/iching.jpg" alt="">
                     </div>
                 </div>
             </div>
+        </div>
     </div>
     <hr>
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,155 @@
+/* Nostradomus Overlay styling */
+#nostradamusoverlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 4.5%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    // margin: 0 auto;
+    align-items: center;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 2;
+    cursor: pointer;
+}
+.nostradamusoverlayimg {
+    display: flex;
+    margin-top: 25px;
+    flex-direction: row;
+    // min-height: 90vh;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    
+}
+.nostradamusoverlaytxt {
+    display: flex;
+    flex-direction: column;
+    // min-height: 90vh;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    align-content: center;
+    justify-content: center;
+    h2 {
+        text-align: center;
+    }
+}
+
+/* Vedas Overlay styling */
+#vedasoverlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 4.5%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    // margin: 0 auto;
+    align-items: center;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 2;
+    cursor: pointer;
+    .vedasoverlayimg {
+        display: flex;
+        margin-top: 25px;
+        flex-direction: row;
+        // min-height: 90vh;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        
+    }
+    .vedasoverlaytxt {
+        display: flex;
+        flex-direction: column;
+        // min-height: 90vh;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        align-content: center;
+        justify-content: center;
+        h2 {
+            text-align: center;
+        }
+    }
+}
+
+/* Apocrypha Overlay styling */
+#apocryphaoverlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 4.5%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    // margin: 0 auto;
+    align-items: center;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 2;
+    cursor: pointer;
+    .apocryphaoverlayimg {
+        display: flex;
+        margin-top: 25px;
+        flex-direction: row;
+        // min-height: 90vh;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        
+    }
+    .apocryphaoverlaytxt {
+        display: flex;
+        flex-direction: column;
+        // min-height: 90vh;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        align-content: center;
+        justify-content: center;
+        h2 {
+            text-align: center;
+        }
+    }
+}
+
+/* I Ching Overlay styling */
+#ichingoverlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 4.5%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    // margin: 0 auto;
+    align-items: center;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 2;
+    cursor: pointer;
+    .ichingoverlayimg {
+        display: flex;
+        margin-top: 25px;
+        flex-direction: row;
+        // min-height: 90vh;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        
+    }
+    .ichingoverlaytxt {
+        display: flex;
+        flex-direction: column;
+        // min-height: 90vh;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        align-content: center;
+        justify-content: center;
+        h2 {
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+/* Top searches content styling */
+.top-searches-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.top-header {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    p {
+        font-size: 20px;
+    }
+}
+.popsearch {
+    text-align: center;
+    padding: 10px;
+    p {
+        font-size: 14px;
+    }
+}
+.top-search-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.imgcontainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    img{
+        margin-left: 10px;
+        margin-right: 10px; 
+        @include h-w(90px);
+    }
+}
+.imgcontainer .content {
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgba(0, 0, 0, 0.65); /* Black background with 0.5 opacity */
+    width: 90px; /* Full width */
+    line-height: 1px;
+    // padding: 20px; /* Some padding */
+}
