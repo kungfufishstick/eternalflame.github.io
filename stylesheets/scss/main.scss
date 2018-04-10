@@ -27,7 +27,9 @@
     .popsearch {
         flex-basis: 30%;
     }
-    
+    .topsearchoverlay {
+        top: 5%;
+    }
 }
 @media (min-width: 522px) {
     .popsearch {
