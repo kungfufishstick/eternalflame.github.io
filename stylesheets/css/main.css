@@ -195,7 +195,7 @@ hr {
   align-content: center;
   justify-content: center; }
   .nostradamusoverlaytxt h2 {
-    text-align: center; }
+    padding-left: 10px; }
 
 /* Vedas Overlay styling */
 #vedasoverlay {
